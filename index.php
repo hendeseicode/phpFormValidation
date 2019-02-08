@@ -19,12 +19,11 @@
         <div class="rowtop">
         </div>
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8"> 
-                <div class="panel panel-default">
+            <div class="col-md-6"> 
+                <div class="panel panel-primary">
                     <div class="panel-heading"> Form Validation </div>
                     <div class="panel-body">
-                        <form method="POST" action="form.php">
+                        <form method="POST" action="<?php $_SERVER["PHP_SELF"]; ?>">
                             <div class="form-group">
                                 <label for="name"> Name: </label>
                                 <input type="name" id="name" name="name" class="form-control"/>
@@ -35,7 +34,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="phone"> Phone: </label>
-                                <input type="phone" name="phone" id="phone" class="form-control"/>
+                                <input type="tel" name="phone" id="phone" class="form-control"/>
                             </div>
                             <div class="form-group">
                                 <label for="pwd"> Password: </label>
@@ -44,13 +43,17 @@
                             <div class="checkbox">
                                 <label><input type="checkbox" name="remember" name="remember"> Remember me! </label>
                             </div>
-                            <button type="submit" class="btn btn-success pull-right"> Submit </button>      
+                            <button type="submit" class="btn btn-primary pull-right"> Submit </button>      
                         </form>
                     </div>
                 </div> 
             </div>
-            <div class="col-md-2"> 
-                
+            <div class="col-md-6"> 
+                <div class="panel panel-danger">
+                    <div class="panel-heading"> Validation Notes </div>
+                    <div class="panel-body">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
